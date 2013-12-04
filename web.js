@@ -4,7 +4,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  var content = fs.readFileSync('index.html');
+  var content = fs.readFileSync("index.html");
   var strCont = content.toString();
   response.send(strCont);
 });
